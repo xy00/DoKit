@@ -49,7 +49,7 @@ iOS各式各样的工具集合
   end
   
 #  s.subspec 'CoreNG' do |ss|
-#    ss.dependency 'DoraemonKit/Foundation'
+#    ss.dependency 'FlimixDoraemonKit/Foundation'
 #    ss.source_files = 'iOS/DoKit/Classes/Core/**/*.{h,m}'
 #    # language-extension-token warning be used to implement Objective-C typeof().
 #    # ?: grammar
@@ -68,7 +68,7 @@ iOS各式各样的工具集合
     ss.source_files = 'iOS/DoKit/Classes/EventSynthesize/*.{h,m}'
     ss.compiler_flags = '-Wall', '-Wextra', '-Wpedantic', '-Werror', '-fvisibility=hidden', '-Wno-gnu-conditional-omitted-operand', '-Wno-pointer-arith'
     ss.framework = 'IOKit'
-    ss.dependency 'DoraemonKit/Foundation'
+    ss.dependency 'FlimixDoraemonKit/Foundation'
   end
 
   s.subspec 'Core' do |ss| 
@@ -87,7 +87,7 @@ iOS各式各样的工具集合
     ss.pod_target_xcconfig = {
       'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) DoraemonWithLogger'
     }
-    ss.dependency 'DoraemonKit/Core'
+    ss.dependency 'FlimixDoraemonKit/Core'
     ss.dependency 'CocoaLumberjack'
   end
 
@@ -96,7 +96,7 @@ iOS各式各样的工具集合
     ss.pod_target_xcconfig = {
       'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) DoraemonWithGPS'
     }
-    ss.dependency 'DoraemonKit/Core'
+    ss.dependency 'FlimixDoraemonKit/Core'
   end
 
   s.subspec 'WithLoad' do |ss| 
@@ -104,7 +104,7 @@ iOS各式各样的工具集合
     ss.pod_target_xcconfig = {
       'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) DoraemonWithLoad'
     }
-    ss.dependency 'DoraemonKit/Core'
+    ss.dependency 'FlimixDoraemonKit/Core'
     # https://guides.cocoapods.org/syntax/podspec.html#vendored_frameworks
     # TODO(ChasonTang): Should change to vendored_framework?
     ss.vendored_frameworks = 'iOS/DoraemonKit/Framework/*.framework'
@@ -115,7 +115,7 @@ iOS各式各样的工具集合
     ss.pod_target_xcconfig = {
       'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) DoraemonWithWeex'
     }
-    ss.dependency 'DoraemonKit/Core'
+    ss.dependency 'FlimixDoraemonKit/Core'
     ss.dependency 'WeexSDK'
     ss.dependency 'WXDevtool'
   end
@@ -125,7 +125,7 @@ iOS各式各样的工具集合
     ss.pod_target_xcconfig = {
         'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) DoraemonWithDatabase'
     }
-    ss.dependency 'DoraemonKit/Core'
+    ss.dependency 'FlimixDoraemonKit/Core'
     ss.dependency 'YYDebugDatabase'
   end
 
@@ -134,7 +134,7 @@ iOS各式各样的工具集合
     ss.pod_target_xcconfig = {
       'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) DoraemonWithMLeaksFinder'
     }
-    ss.dependency 'DoraemonKit/Core'
+    ss.dependency 'FlimixDoraemonKit/Core'
     ss.dependency 'FBRetainCycleDetector'
   end
 
@@ -143,7 +143,7 @@ iOS各式各样的工具集合
     ss.pod_target_xcconfig = {
       'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) DoraemonWithMultiControl'
     }
-    ss.dependency 'DoraemonKit/Core'
-    ss.dependency 'DoraemonKit/Foundation'
+    ss.dependency 'FlimixDoraemonKit/Core'
+    ss.dependency 'FlimixDoraemonKit/Foundation'
   end
 end
