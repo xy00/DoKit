@@ -6,8 +6,8 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'DoraemonKit'
-  s.version          = '3.1.3'
+  s.name             = 'FlimixDoraemonKit'
+  s.version          = '3.1.4'
   s.summary          = 'iOS 各式各样的工具集合'
 
 # This description is used to generate tags and improve search results.
@@ -24,7 +24,7 @@ iOS各式各样的工具集合
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'Apache-2.0', :file => 'LICENSE' }
   s.author           = { 'OrangeLab' => 'orange-lab@didiglobal.com' }
-  s.source           = { :git => 'https://github.com/didi/DoraemonKit.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/xy00/DoKit.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
